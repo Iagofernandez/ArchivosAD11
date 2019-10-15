@@ -15,7 +15,7 @@ public class Aleatorio {
 //                        os campos dun rexistro dunha taboa de produtos , onde cada produto ten 
 ////      un codigo unha descricion e un prezo
     String[] codigo = {"a1", "a2", "a3"};
-    String[] descricion = {"perros", "gatos ", "pajaros"};
+    String[] animal = {"perros", "gatos ", "pajaros"};
     int[] precio = {3, 4, 5};
 
         
@@ -33,13 +33,13 @@ public class Aleatorio {
 
         //Bucle que permite la escritura
         //de los array d eobjetos
-        int posicion = 0;
+        int numero = 0;
 
-        for (posicion = 0; posicion < precio.length; posicion++) {
+        for (numero = 0; numero < precio.length; numero++) {
 
-            String cod = codigo[posicion];
-            String desc = descricion[posicion];
-            int prezo = precio[posicion];
+            String cod = codigo[numero];
+            String desc = animal[numero];
+            int prezo = precio[numero];
 
             ficheroRandom.writeChars(String.format("%-" + 3 + "s", cod).replace(" ", "0"));
             ficheroRandom.writeChars(String.format("%-" + 10 + "s", desc).replace(" ", "0"));
@@ -92,21 +92,21 @@ public class Aleatorio {
 class Product {
 
     private String codigo;
-    private String descripcion;
+    private String animal;
     private int precio;
 
     public Product() {
 
         codigo = "";
-        descripcion = "";
+        animal = "";
         precio = 0;
 
     }
 
-    public Product(String codigo, String descripcion, int precio) {
+    public Product(String codigo, String animal, int precio) {
 
         this.codigo = codigo;
-        this.descripcion = descripcion;
+        this.animal = animal;
         this.precio = precio;
 
     }
@@ -115,8 +115,8 @@ class Product {
         this.codigo = codigo;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setAnimal(String animal) {
+        this.animal = animal;
     }
 
     public void setPrecio(int precio) {
@@ -127,8 +127,8 @@ class Product {
         return codigo;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getAnimal() {
+        return animal;
     }
 
     public int getPrecio() {
@@ -137,6 +137,6 @@ class Product {
 
     @Override
     public String toString() {
-return "Product{" + "codigo=" + codigo + ", descripcion=" + descripcion + ", precio=" + precio + '}';
+return "Product{" + "codigo=" + codigo + ", animal=" + animal + ", precio=" + precio + '}';
 }
 }
