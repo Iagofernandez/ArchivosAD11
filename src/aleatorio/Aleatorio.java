@@ -26,10 +26,10 @@ public class Aleatorio {
         //se usara para ver si es psoible escribir en un fichero
         RandomAccessFile ficheroRandom = new RandomAccessFile(fichero, "Acceso");
 
-        String prueba = "Funciona";
+        String function = "Funciona";
 //       A clase String ten un metodo denonimado format 
 //        que permite dar formato a unha cadea cadea :  format("%" + width + "s", t)   
-        System.out.println(String.format("%" + 50 + "s", prueba).replace(" ", "0"));
+        System.out.println(String.format("%" + 40 + "s", function).replace(" ", "0"));
 
         //Bucle que permite la escritura
         //de los array d eobjetos
@@ -82,8 +82,8 @@ public class Aleatorio {
 
         ficheroRandom.close();
 
-        Product prod2 = new Product(cod, desc, precio1);
-        System.out.println(prod2.toString());
+        Product producto = new Product(cod, desc, precio1);
+        System.out.println(producto.toString());
 
     }
 
