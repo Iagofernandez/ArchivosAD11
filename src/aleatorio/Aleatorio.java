@@ -14,8 +14,8 @@ public class Aleatorio {
 //                que  ocupan a mesma posicion nos arrays representan 
 //                        os campos dun rexistro dunha taboa de produtos , onde cada produto ten 
 ////      un codigo unha descricion e un prezo
-    String[] codigo = {"p1", "p2", "p3"};
-    String[] descricion = {"parafusos", "cravos ", "tachas"};
+    String[] codigo = {"a1", "a2", "a3"};
+    String[] descricion = {"perros", "gatos ", "pajaros"};
     int[] precio = {3, 4, 5};
 
         
